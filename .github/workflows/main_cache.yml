@@ -23,6 +23,7 @@ jobs:
           path: |
             ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}  # to suggest only when there is a change/update in the file only then download the file
+          # this will cache only the requirements file. So if we make any change in init it will not create any new cache, ONLY if we change anything in the requiremnets file then it will create a new cache
           restore-keys: |
             ${{ runner.os }}-pip-
 
