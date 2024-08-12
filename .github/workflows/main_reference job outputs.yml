@@ -1,4 +1,4 @@
-name: Demonstrating job output
+name: Referencing job1 output to another job
 
 on: 
   workflow_dispatch:
