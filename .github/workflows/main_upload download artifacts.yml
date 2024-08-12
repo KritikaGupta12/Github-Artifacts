@@ -1,4 +1,4 @@
-name: Python CI Pipeline
+name: Upload / download artifacts
 
 # on: [push, pull_request]
 on: 
